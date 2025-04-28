@@ -6,7 +6,7 @@
 /*   By: ydembele <ydembele@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/24 16:37:04 by ydembele          #+#    #+#             */
-/*   Updated: 2025/02/26 16:49:35 by ydembele         ###   ########.fr       */
+/*   Updated: 2025/04/28 16:35:08 by ydembele         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ size_t	ft_strlcat(char *dest, char *src, size_t size)
 {
 	size_t	d;
 	size_t	i;
-    size_t  s;
+	size_t	s;
 
 	d = str_len(dest);
 	s = str_len(src);

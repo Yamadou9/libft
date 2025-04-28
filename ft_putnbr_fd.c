@@ -1,10 +1,22 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ydembele <ydembele@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/04/28 16:24:54 by ydembele          #+#    #+#             */
+/*   Updated: 2025/04/28 16:26:32 by ydembele         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <unistd.h>
 #include <fcntl.h>
 #include <stdlib.h>
 
 void	ft_putnbr_fd(int n, int fd)
 {
-	char	d;
+	char	d;	
 
 	if (fd < 0)
 		return ;

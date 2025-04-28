@@ -1,11 +1,25 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_itoa.c                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ydembele <ydembele@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/04/28 16:06:04 by ydembele          #+#    #+#             */
+/*   Updated: 2025/04/28 16:08:00 by ydembele         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include<stdlib.h>
 
 char	*ft_strdup(const char *s);
 void	*ft_calloc(size_t nmemb, size_t size);
 
-int		ft_pass(char *res)
+int	ft_pass(char *res)
 {
-	int i = 0;
+	int	i;
+
+	i = 0;
 	while (res[i])
 		i++;
 	return (i);
@@ -23,7 +37,7 @@ char	*ft_itoto(char *res, int n)
 	}
 	if (n < 10)
 	{
-		i = ft_pass(res);	
+		i = ft_pass(res);
 		res[i] = n + 48;
 	}
 	else

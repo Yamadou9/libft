@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_split.c                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ydembele <ydembele@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/04/28 16:49:15 by ydembele          #+#    #+#             */
+/*   Updated: 2025/04/28 16:49:16 by ydembele         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include<stdlib.h>
 #include<stdio.h>
 #include<stdbool.h>
@@ -7,7 +19,7 @@ size_t	ft_strlen(const char *s);
 size_t	ft_countword(char const *s, char c)
 {
 	bool	set;
-	int	i;
+	int		i;
 	size_t	word;
 
 	word = 0;
@@ -37,10 +49,10 @@ size_t	len_set(char const *s, int o, char c)
 		i++;
 		o++;
 	}
-	return (i);	
+	return (i);
 }
 
-char **ft_split(char const *s, char c)
+char	**ft_split(char const *s, char c)
 {
 	char	**res;
 	int		i;

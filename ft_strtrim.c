@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strtrim.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ydembele <ydembele@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/04/28 16:38:55 by ydembele          #+#    #+#             */
+/*   Updated: 2025/04/28 16:48:07 by ydembele         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include<stdlib.h>
 #include<stdio.h>
 
@@ -33,9 +45,9 @@ int	ft_strlenset(char const *s1, char const *set)
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
-	int	i;
-	int	j;
 	char	*str;
+	int		i;
+	int		j;
 
 	j = 0;
 	i = 0;
@@ -53,11 +65,9 @@ char	*ft_strtrim(char const *s1, char const *set)
 	}
 	str[j] = 0;
 	return (str);
-}		
+}
 /*int	main(int ac, char **av)
 {
 	(void)ac;
 	printf("%s", ft_strtrim(av[1], av[2]));
 }*/	
-
-	

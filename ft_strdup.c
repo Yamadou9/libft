@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ydembele <ydembele@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/04/28 16:44:38 by ydembele          #+#    #+#             */
+/*   Updated: 2025/04/28 16:46:29 by ydembele         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include<stdlib.h>
 #include<stdio.h>
 
@@ -5,8 +17,8 @@ size_t	ft_strlen(const char *s);
 
 char	*ft_strdup(const char *s)
 {
-	size_t		i;
 	char	*res;
+	size_t	i;
 
 	i = 0;
 	res = malloc(sizeof(char) * ft_strlen(s) + 1);
