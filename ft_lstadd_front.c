@@ -6,7 +6,7 @@
 /*   By: ydembele <ydembele@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/28 17:18:28 by ydembele          #+#    #+#             */
-/*   Updated: 2025/04/28 18:45:01 by ydembele         ###   ########.fr       */
+/*   Updated: 2025/04/29 16:00:13 by ydembele         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,4 +15,5 @@
 void	ft_lstadd_front(t_list **lst, t_list *new)
 {
 	new->next = *lst;
+	*lst = new;
 }

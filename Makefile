@@ -12,7 +12,7 @@ SRC =	ft_atoi.c ft_bzero.c ft_calloc.c ft_isalnum.c ft_isalpha.c \
 		ft_itoa.c ft_putchar_fd.c ft_putendl_fd.c ft_putnbr_fd.c ft_putstr_fd.c \
 		ft_split.c ft_strjoin.c ft_strmapi.c ft_strtrim.c ft_substr.c ft_striteri.c
 
-BONUS_SRC = ft_lstnew.c ft_lstlast.c ft_lstadd_front.c ft_lstadd_back.c ft_lstiter.c  ft_lstdelone.c ft_lstclear.c ft_lstsize.c
+BONUS_SRC = ft_lstnew.c ft_lstlast.c ft_lstadd_front.c ft_lstadd_back.c ft_lstiter.c  ft_lstdelone.c ft_lstclear.c ft_lstsize.c ft_lstmap.c
 
 OBJS = $(SRC:.c=.o)
 BONUS_OBJS = $(BONUS_SRC:.c=.o)

@@ -6,7 +6,7 @@
 /*   By: ydembele <ydembele@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/28 18:49:01 by ydembele          #+#    #+#             */
-/*   Updated: 2025/04/28 19:00:15 by ydembele         ###   ########.fr       */
+/*   Updated: 2025/04/29 16:22:49 by ydembele         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,12 @@
 
 t_list	*ft_lstlast(t_list *lst)
 {
-	if (!lst)
+	t_list *current;
+
+	if (!lst )
 		return (0);
-	while (lst->next != NULL)
-		lst = lst->next;
-	return (lst);
+	current = lst;
+	while (current->next != NULL)
+		current = current->next;
+	return (current);
 }
