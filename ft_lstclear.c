@@ -6,7 +6,7 @@
 /*   By: ydembele <ydembele@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/28 19:20:29 by ydembele          #+#    #+#             */
-/*   Updated: 2025/04/29 16:50:30 by ydembele         ###   ########.fr       */
+/*   Updated: 2025/04/29 20:19:34 by ydembele         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
 	t_list	*current;
-	
+
 	if (!lst || !del)
 		return ;
 	current = *lst;
@@ -26,5 +26,5 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 		free(*lst);
 		*lst = current;
 	}
-	*lst = 	NULL;
+	*lst = NULL;
 }

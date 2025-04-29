@@ -6,7 +6,7 @@
 /*   By: ydembele <ydembele@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/28 19:01:32 by ydembele          #+#    #+#             */
-/*   Updated: 2025/04/29 18:53:53 by ydembele         ###   ########.fr       */
+/*   Updated: 2025/04/29 20:17:28 by ydembele         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,8 @@
 
 void	ft_lstadd_back(t_list **lst, t_list *new)
 {
-	t_list *current;
+	t_list	*current;
 
-	
 	if (!lst || !new)
 		return ;
 	if (*lst == NULL)

@@ -6,20 +6,19 @@
 /*   By: ydembele <ydembele@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 17:07:20 by ydembele          #+#    #+#             */
-/*   Updated: 2025/04/29 19:56:55 by ydembele         ###   ########.fr       */
+/*   Updated: 2025/04/29 20:21:43 by ydembele         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_list *ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
+t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
 	t_list	*newnode_head;
 	void	*temp;
 	t_list	*jjj;
 	t_list	*current;
-	
-	
+
 	if (!lst || !f || !del)
 		return (NULL);
 	newnode_head = NULL;
@@ -32,10 +31,10 @@ t_list *ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 		{
 			del(temp);
 			ft_lstclear(&newnode_head, del);
-			return 0;
+			return (0);
 		}
 		ft_lstadd_back(&newnode_head, jjj);
-		current = current->next;	
+		current = current->next;
 	}
 	return (newnode_head);
 }
