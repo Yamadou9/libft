@@ -6,7 +6,7 @@
 /*   By: ydembele <ydembele@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/28 16:42:18 by ydembele          #+#    #+#             */
-/*   Updated: 2025/04/28 16:42:19 by ydembele         ###   ########.fr       */
+/*   Updated: 2025/05/06 12:07:04 by ydembele         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,18 @@
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-	size_t		i;
+	const unsigned char	*s;
+	const unsigned char	*d;
+	size_t				i;
 
+	s = (unsigned char *)s1;
+	d = (unsigned char *)s2;
 	i = 0;
 	if (n == 0)
 		return (0);
-	while (s1[i] == s2[i] && i < n - 1 && s1[i] && s2[i])
+	while (i < n - 1 && s[i] == d[i] && s[i] && d[i])
 		i++;
-	return (s1[i] - s2[i]);
+	return (s[i] - d[i]);
 }
 /*int	ft_atoi(const char *nptr);
 int		main(int ac, char **av)

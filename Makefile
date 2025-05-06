@@ -1,7 +1,3 @@
-# **************************************************************************** #
-#                              LIBFT MAKEFILE (NO BONUS)                      #
-# **************************************************************************** #
-
 NAME = libft.a
 
 SRC =	ft_atoi.c ft_bzero.c ft_calloc.c ft_isalnum.c ft_isalpha.c \
@@ -18,7 +14,7 @@ OBJS = $(SRC:.c=.o)
 BONUS_OBJS = $(BONUS_SRC:.c=.o)
 
 CC = gcc
-CFLAGS = -Wall -Wextra -Werror -I .
+CFLAGS = -Wall -Wextra -Werror
 
 RM = rm -f
 

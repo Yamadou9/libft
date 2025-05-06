@@ -6,11 +6,12 @@
 /*   By: ydembele <ydembele@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/28 16:06:04 by ydembele          #+#    #+#             */
-/*   Updated: 2025/04/28 16:08:00 by ydembele         ###   ########.fr       */
+/*   Updated: 2025/05/06 11:29:34 by ydembele         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include<stdlib.h>
+#include "libft.h"
 
 char	*ft_strdup(const char *s);
 void	*ft_calloc(size_t nmemb, size_t size);
@@ -70,9 +71,9 @@ char	*ft_itoa(int n)
 		t++;
 	}
 	if (n < 0)
-		res = calloc(sizeof(char), (t + 2));
+		res = ft_calloc(sizeof(char), (t + 2));
 	else
-		res = calloc(sizeof(char), (t + 1));
+		res = ft_calloc(sizeof(char), (t + 1));
 	if (res == NULL)
 		return (NULL);
 	res = ft_itoto(res, n);

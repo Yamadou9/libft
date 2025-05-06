@@ -6,7 +6,7 @@
 /*   By: ydembele <ydembele@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/28 16:35:20 by ydembele          #+#    #+#             */
-/*   Updated: 2025/04/28 16:35:21 by ydembele         ###   ########.fr       */
+/*   Updated: 2025/05/06 13:20:39 by ydembele         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,18 +31,18 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t siz)
 		dest[i] = src[i];
 		i++;
 	}
-	while (i < size)
+	if (i < size)
 	{	
 		dest[i] = 0;
 		i++;
 	}
 	return (j);
 }
-/*
-int main()
-{
-	char src[] = "coucou";
-	char dest[10]; memset(dest, 'A', 10);
-	printf("%d ,%s", ft_strlcpy(dest, src, 7), dest);
-}
-*/
+
+// int main()
+// {
+//  	char src[] = "coucou";
+//  	char *dest;
+// 	dest = "bonjour" 
+//  	printf("%d ", ft_strlcpy(dest, "", 15));
+// }
